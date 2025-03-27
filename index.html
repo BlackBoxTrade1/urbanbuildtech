@@ -6,86 +6,63 @@
     <title>URBAN</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #0057b3, #ffffff);
-            color: #333;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        img {
-            max-width: 200px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #0057b3;
-        }
-        .content {
-            text-align: left;
-        }
-        .content h2 {
-            color: #0057b3;
-        }
-        .content p {
-            margin: 10px 0;
-            font-size: 16px;
-        }
-        .brochure-link {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #0057b3;
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
             color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #000;
             text-decoration: none;
+            font-weight: bold;
             border-radius: 5px;
+            margin-top: 15px;
         }
-        .brochure-link:hover {
-            background: #003d80;
-        }
-        .contact {
-            margin-top: 30px;
+
+        .contact-info {
+            margin-top: 20px;
             font-size: 14px;
-            color: #555;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="urban-logo.png" alt="Urban Logo">
-        <h1>Why Choose Urban Ceilings?</h1>
-        <div class="content">
-            <h2>Designed for Indian Conditions</h2>
-            <p>High humidity and heat resistance to prevent sagging.</p>
-
-            <h2>Superior Strength</h2>
-            <p>High-density tiles (3.9 kg/m²) with anti-moisture coating.</p>
-
-            <h2>Fire-Safe</h2>
-            <p>Certified Class A (A2-s1, d0, t0) fire rating for enhanced safety.</p>
-
-            <h2>Cost-Effective Performance</h2>
-            <p>Premium quality at a competitive price.</p>
-
-            <h2>Noise Reduction</h2>
-            <p>Engineered for superior acoustic performance, reducing ambient noise and improving sound clarity in offices, classrooms, and commercial spaces.</p>
-        </div>
-        
-        <a href="URBAN Brochure.pdf" class="brochure-link" download>Download Brochure</a>
-
-        <div class="contact">
-            <p><strong>Contact Us:</strong></p>
-            <p>Email: hello@urbanbuildtech.com</p>
-            <p>Phone: +91 95000 85893</p>
-            <p>Website: <a href="https://urbanbuildtech.com" target="_blank">urbanbuildtech.com</a></p>
+        <img src="urban-logo.png" alt="Urban Build Tech Logo" class="logo">
+        <h1>Interior Building Products</h1>
+        <p>URBAN Mineral Fibre Tiles Technical Data Sheet</p>
+        <a href="URBAN Brochure.pdf" class="download-btn" download>Download</a>
+        <div class="contact-info">
+            <p>📍 Address: 7 & 9 Nehru Timber Market, Choolai, Chennai, India</p>
+            <p>📞 Phone: +91 95000 85893</p>
+            <p>📧 Email: hello@urbanbuildtech.com</p>
         </div>
     </div>
 </body>
 </html>
+
