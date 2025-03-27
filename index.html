@@ -10,6 +10,7 @@
             padding: 0;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -17,6 +18,7 @@
             background-size: cover;
             color: white;
             font-family: Arial, sans-serif;
+            position: relative;
         }
 
         .container {
@@ -37,37 +39,51 @@
         .download-btn {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #1e3a8a; /* Updated to match the logo color */
+            background-color: #1e3a8a; /* Match logo color */
             color: white;
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
             margin-top: 15px;
             border: 2px solid #1e3a8a;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #1e3a8a;
         }
 
         .contact-info {
             margin-top: 20px;
             font-size: 14px;
         }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="urban-logo.png" alt="Urban Build Tech Logo" class="logo">
+        <img src="urban-logo.png" alt="Urban Logo" class="logo">
         <h1>Interior Building Products</h1>
         <p>URBAN Mineral Fibre Tiles Technical Data Sheet</p>
         <a href="UrbanMFT.pdf" class="download-btn" download>Download</a>
         <div class="contact-info">
-            <p>📞 Phone: +91 95000 85893</p>
-            <p>📧 Email: hello@urbanbuildtech.com</p>
-            <p>🌍 Address: 7 & 9 Nehru Timber Market, Choolai, Chennai, India</p>
+            <p>📞 +91 95000 85893</p>
+            <p>📧 hello@urbanbuildtech.com</p>
+            <p>🌍 7 & 9 Nehru Timber Market, Choolai, Chennai, India</p>
         </div>
     </div>
-</body>
-    <p style="font-size: 12px; margin-top: 20px;">An unit of Indian Glass & Plywood Centre | An ISO 9001:2015 Company | Since 1979</p>
+    <div class="footer">
+        A unit of Indian Glass & Plywood Centre | An ISO 9001:2015 Company | Since 1979
     </div>
 </body>
-</html>
 </html>
 
